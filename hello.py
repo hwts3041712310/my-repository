@@ -1,1 +1,1 @@
-print("name:Yang Mingqian\nnumber:10225102459")
+print("name:杨鸣谦\nnumber:10225102459")
