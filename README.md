@@ -1,3 +1,4 @@
 # my-repository
 ymq's
-This hub has already been occupied by lwq.
+
+This hub has already been occupied by Lwq.
