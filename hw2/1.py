@@ -1,4 +1,4 @@
-a=int(input("请输入一个正整数："))
+a=int(input())
 if(a==1):
     print(1)
 elif(a==2):
