@@ -9,7 +9,7 @@ def fixedIntegrals(times):
         if(d>0):
             sum+=1
     print((21*sum)/times)
-times=int(input("请输入times:"))
+times=int(input())
 fixedIntegrals(times)
 
     
