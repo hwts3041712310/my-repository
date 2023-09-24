@@ -9,7 +9,12 @@ def pai_1(times):
         if(d>0):
             sum+=1
     print((4*sum)/times)
-print("方法一（蒙特卡罗法）：",end="")
+def pai_3():
+    pai=16*math.atan(1/5)-4*math.atan(1/239)
+    print(pai)
+print("梅钦公式法：",end="")
+pai_3()
+print("蒙特卡罗法：",end="")
 pai_1(1000000)
 def pai_2():
     n=6
@@ -18,10 +23,6 @@ def pai_2():
         n=2*n
         a=math.sqrt(2-2*math.sqrt(1-(a/2)**2))
     print(n*a/2)
-print("方法二（割圆法）：",end="")
+print("割圆法：",end="")
 pai_2()
-def pai_3():
-    pai=16*math.atan(1/5)-4*math.atan(1/239)
-    print(pai)
-print("方法三（梅钦公式法）：",end="")
-pai_3()
+
