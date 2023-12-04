@@ -8,7 +8,7 @@ from PIL import Image
 import torchvision
 
 
-pic=Image.open('saber.png')
+pic=Image.open('pic.png')
 pic=torchvision.transforms.ToTensor()(pic)
 cov1=torch.nn.Conv2d(4,1,(1,1))
 cov1.weight.data=torch.Tensor([[[[0.25]],[[0.25]],[[0.25]],[[0.25]]]])
@@ -17,7 +17,7 @@ pic=cov1(pic)
 pic=torchvision.transforms.ToPILImage()(pic)
 
 k=int(input("缩小k倍:"))
-pic=Image.open('saber.png')
+pic=Image.open('pic.png')
 pic=torchvision.transforms.ToTensor()(pic)
 pool=torch.nn.MaxPool2d((11,11),k,padding=5)
 pic=pool(pic)
